@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <form id="bigliettoForm">
+            <label for="nome">Nome Cognome</label>
+            <input type="text" id="nome" placeholder="Inserisci il tuo nome">
+
+            <label for="km">Km da percorrere</label>
+            <input type="number" id="km" placeholder="Esempio: 10">
+
+            <label for="eta">Fascia d'età</label>
+            <select id="eta">
+                <option value="17">Minorenne</option>
+                <option value="30">Maggiorenne</option>
+                <option value="70">Over 65</option>
+            </select>
+
+            <button type="button" id="calcola">Genera</button>
+            <button type="reset">Annulla</button>
+        </form>
+
+        <div id="dettaglioBiglietto" style="display: none;">
+            <h2>IL TUO BIGLIETTO</h2>
+            <table>
+                <tr>
+                    <th>Nome Passeggero</th>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo Biglietto</th>
+                </tr>
+                <tr>
+                    <td id="nomePasseggero"></td>
+                    <td id="offerta"></td>
+                    <td id="carrozza"></td>
+                    <td id="codiceCP"></td>
+                    <td id="costoBiglietto"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
